@@ -1,22 +1,15 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/nSDLX_in)
-
-1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial). 
--membuat direktori lokal dan menginstall django
--membuat repositori github
--mengintegrasikan reposito github dengan direktori lokal
--melakukan deployment ke PWS untuk mengecek apakah django saya sudah berjalan dengan baik
--membuat model product sesuai dengan tema yang saya pakai
--membuat fungsi pada views
--membuat routing pada urls
--mengecek ulang apakah sudah berjalan seperti seharusnya astau belum
-
-2. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.
-3. Peran settings.py di django :
-
-mengatur database apa yang akan digunakan oleh project tersebut
-mengatur lokasi file hmtl pada templates
-mengatur aplikasi apa saja yang aktif dalam project tersebut
-mengatur domain apa saja yang diizinkan untuk mengakses project
-4. Cara kerja migrasi dalam django adalah pertama kita bisa mengubah models.py lalu menjalankan perintah makemigrations, perintah tersebut akan membandingkan model saat ini dengan migrasi terakhir dan jika ada perubahan akan membuat file baru di folder migrations yang berisi perubahan database. Setelah itu kita harus menjalankan migrate untuk mengubah struktur database sesuai migrasi yang terakhir.
-5. Django memungkinkan kita untuk membuat real product tanpa perlu mempelajari SQL secara mendalam, jadi pemula bisa lebih fokus pada logika pengembangan perangkat lunak terlebih dahulu tanpa perlu takut untuk mempelajari SQL sebagai database.
-6. tidak ada, semua asdos sudah baik
+1. -data delivery berfungsi sebagai perantara antara backend dan pengguna aplikasi untuk bertukar informasi.
+- membuat kegiatan kegiatan realtime seperti autentikasi data, pembayaran dan lain lain dapat terjadi
+2. menurut saya pribadi JSON lebih baik dibandingkan dengan XML karena JSON menyajikan data dengan lebih mudah dibaca oleh mata manusia dan lebih mudah diintegrasikan dengan REST API karena itu juga JSON lebih populer dibanding XML
+3. tujuan utama dari is_valid() adalah memvalidasi apakah input yang diberikan user sudah sesuai dengan apa yang kita inginkan atau belum. Jika belum sesuai, user tidak akan bisa mensubmit sampai format data sudah sesuai. jika tidak ada is_field(), data yang di input user bisa salah penempatan, contohnya nama : 240183021
+4. csrf_token merupakan semacam bantuan dari django itu sendiri untuk melindungi kita dari serangan siber. django akan memberikan token rahasia sehingga penyerang server tidak dapat mengakses request palsu. jika kita tidak menggunakan csrf_token maka penyerang server dapat mengakses request palsu tanpa kita ketahui. request palsu tersebut dapat dimanfaatkan oleh penyerang server untuk keuntungan mereka, seperti meminta transfer atau mengganti password akun.
+5. -menambahkan 4 fungsi baru di views.py yang berfungsi untuk melihat data (XML, JSON, XML by ID, dan JSON by ID.)
+-membuat path untuk keempat fungsi di atas
+-mengimport product dari models
+-menambahkan fungsi add_product dan show_product di views.py
+-membuat file add_product dan product details di main/templates, dengan template yang sama seperti tutorial namun diubah sesuai dengan keperluan
+-mengubah kategori produk menjadi sepatu futsal dan sepatu bola saja
+-membuat file forms.py
+-membuat product_list
+- -Membuat halaman yang menampilkan data objek model yang memiliki tombol "Add" yang akan redirect ke halaman form dan tombol "Detail" pada setiap data objek model yang akan menampilkan halaman detail objek. 
+6. tidak ada, penjelasan di website sudah jelas dan asdos sangat baik

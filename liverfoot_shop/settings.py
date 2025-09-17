@@ -33,7 +33,8 @@ DEBUG = True
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "mahesa-gerrardybhumi-liverfootshop.pbp.cs.ui.ac.id"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://mahesa-gerrardybhumi-liverfootshop.pbp.cs.ui.ac.id"
+    "https://mahesa-gerrardybhumi-liverfootshop.pbp.cs.ui.ac.id",
+    "http://mahesa-gerrardybhumi-liverfootshop.pbp.cs.ui.ac.id"
 ]
 
 

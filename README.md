@@ -13,3 +13,8 @@
 -membuat product_list
 - -Membuat halaman yang menampilkan data objek model yang memiliki tombol "Add" yang akan redirect ke halaman form dan tombol "Detail" pada setiap data objek model yang akan menampilkan halaman detail objek. 
 6. tidak ada, penjelasan di website sudah jelas dan asdos sangat baik
+
+link foto foto
+https://drive.google.com/drive/folders/1mqS_vofyV4m3PabJ6P1guv_T6uYWN8Fx?usp=drive_link
+  
+
